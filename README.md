@@ -1,81 +1,188 @@
 # Iris Flower Classification Using Machine Learning
 
-## 📌 Project Overview
+## Project Description and Motivation
 
-The Iris Flower Classification project is a Machine Learning classification system that predicts the species of an Iris flower based on its physical characteristics. The model classifies flowers into one of three species:
+The Iris Flower Classification project is a Machine Learning application that predicts the species of an Iris flower based on its physical characteristics. The model classifies flowers into one of three categories: Iris Setosa, Iris Versicolor, and Iris Virginica.
 
-- Iris Setosa
-- Iris Versicolor
-- Iris Virginica
+This project was developed to understand the complete Machine Learning lifecycle, including data preprocessing, exploratory data analysis, model training, evaluation, and prediction. It serves as a beginner-friendly introduction to supervised learning and classification problems.
 
-This project demonstrates the complete Machine Learning workflow, including data preprocessing, exploratory data analysis, model training, evaluation, and prediction.
+### Motivation
 
----
-
-## 🎯 Problem Statement
-
-Flower species identification is traditionally performed through manual observation by experts. This process can be time-consuming and prone to human error.
-
-The objective of this project is to develop an AI-based classification system that automatically predicts the species of an Iris flower using Machine Learning techniques.
+Manual classification of flower species requires botanical expertise and can be time-consuming. Machine Learning can automate this process by learning patterns from historical data and making accurate predictions for new observations.
 
 ---
 
-## 🚀 Objectives
+# Dataset Information
 
-- Analyze the Iris dataset.
-- Perform Exploratory Data Analysis (EDA).
-- Visualize feature relationships.
-- Train classification models.
-- Evaluate model performance.
-- Predict flower species accurately.
+**Dataset Name:** Iris Flower Dataset
 
----
-
-## 📊 Dataset Information
-
-### Dataset Name
-Iris Flower Dataset
+**Source:** Scikit-Learn Repository / UCI Machine Learning Repository
 
 ### Dataset Statistics
 
-| Attribute | Value |
-|------------|---------|
-| Total Records | 150 |
-| Features | 4 |
-| Classes | 3 |
-| Missing Values | 0 |
+* Total Records: 150
+* Features: 4
+* Classes: 3
+* Missing Values: 0
 
 ### Features
 
-- Sepal Length (cm)
-- Sepal Width (cm)
-- Petal Length (cm)
-- Petal Width (cm)
+* Sepal Length (cm)
+* Sepal Width (cm)
+* Petal Length (cm)
+* Petal Width (cm)
 
-### Target Variable
+### Target Classes
 
-Species
-
-- Iris-setosa
-- Iris-versicolor
-- Iris-virginica
+* Iris-setosa
+* Iris-versicolor
+* Iris-virginica
 
 ---
 
-## 🛠 Technology Stack
+# Installation Guide
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- Jupyter Notebook
-- Git & GitHub
+## Prerequisites
+
+* Python 3.9+
+* pip
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/iris-flower-classification-ml.git
+cd iris-flower-classification-ml
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Required Libraries
+
+```txt
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+jupyter
+```
 
 ---
 
-## 📂 Project Structure
+# Usage Instructions
+
+## Run Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+notebooks/iris_analysis.ipynb
+```
+
+## Run Model Training Script
+
+```bash
+python src/train_model.py
+```
+
+## Run Prediction Script
+
+```bash
+python src/prediction.py
+```
+
+## Example Prediction
+
+Input:
+
+```text
+Sepal Length: 5.1
+Sepal Width: 3.5
+Petal Length: 1.4
+Petal Width: 0.2
+```
+
+Output:
+
+```text
+Predicted Species: Iris-setosa
+```
+
+---
+
+# Machine Learning Workflow
+
+```text
+IRIS Dataset
+      ↓
+Data Preprocessing
+      ↓
+Exploratory Data Analysis
+      ↓
+Feature Selection
+      ↓
+Train-Test Split
+      ↓
+Model Training
+      ↓
+Model Evaluation
+      ↓
+Species Prediction
+```
+
+---
+
+# Model Performance Summary
+
+## Algorithms Evaluated
+
+1. K-Nearest Neighbors (KNN)
+2. Decision Tree Classifier
+3. Random Forest Classifier
+
+## Benchmark Results
+
+| Algorithm     | Accuracy |
+| ------------- | -------- |
+| KNN           | 96%      |
+| Decision Tree | 95%      |
+| Random Forest | 98%      |
+
+### Best Model
+
+**Random Forest Classifier**
+
+Reasons:
+
+* Highest Accuracy
+* Better Generalization
+* Reduced Overfitting
+
+### Evaluation Metrics
+
+* Accuracy Score
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
+
+Expected Accuracy Range:
+
+```text
+95% - 98%
+```
+
+---
+
+# Project Structure
 
 ```text
 iris-flower-classification-ml
@@ -103,133 +210,38 @@ iris-flower-classification-ml
 
 ---
 
-## ⚙️ Machine Learning Workflow
+# Future Enhancements
 
-```text
-IRIS Dataset
-      │
-      ▼
-Data Preprocessing
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Feature Selection
-      │
-      ▼
-Train-Test Split
-      │
-      ▼
-Model Training
-      │
-      ▼
-Model Evaluation
-      │
-      ▼
-Species Prediction
-```
+* Deploy using Streamlit
+* Develop a Web Interface
+* Add Real-Time Prediction
+* Integrate Deep Learning Models
+* Deploy to Cloud Platforms
 
 ---
 
-## 🤖 Algorithms Used
+# Contributors
 
-- K-Nearest Neighbors (KNN)
-- Decision Tree Classifier
-- Random Forest Classifier
-
-### Recommended Model
-Random Forest Classifier
-
-Reason:
-- High Accuracy
-- Robust Performance
-- Less Overfitting
+| Name          | Role                                  |
+| ------------- | ------------------------------------- |
+| Srikar Samala | Project Developer                     |
+| Team Members  | Data Analysis, Testing, Documentation |
 
 ---
 
-## 📈 Evaluation Metrics
+# License
 
-The model is evaluated using:
+This project is licensed under the MIT License.
 
-- Accuracy Score
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
+Copyright (c) 2026
 
-Expected Accuracy:
-
-```text
-95% - 100%
-```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to use, copy, modify, and distribute the software for educational and research purposes.
 
 ---
 
-## 📊 Expected Output
+# Acknowledgements
 
-Input:
-
-```text
-Sepal Length = 5.1
-Sepal Width = 3.5
-Petal Length = 1.4
-Petal Width = 0.2
-```
-
-Output:
-
-```text
-Predicted Species: Iris-setosa
-```
-
----
-
-## 📅 Project Timeline
-
-| Day | Task |
-|------|------|
-| Day 1 | Project Selection & Dataset Analysis |
-| Day 2 | Data Cleaning & EDA |
-| Day 3 | Data Visualization & Feature Analysis |
-| Day 4 | Model Training |
-| Day 5 | Model Evaluation |
-| Day 6 | Documentation & Presentation |
-
----
-
-## 🌍 Real-World Applications
-
-- Plant Species Identification
-- Agricultural Monitoring
-- Biodiversity Research
-- Pattern Recognition Systems
-- AI-based Classification Systems
-
----
-
-## 📌 Future Enhancements
-
-- Deploy using Streamlit
-- Create a Web Interface
-- Add Real-Time Prediction
-- Integrate Deep Learning Models
-- Build Mobile Application Support
-
----
-
-## 👨‍💻 Author
-
-**Srikar Samala**
-
-B.Tech Computer Science
-
-Machine Learning & AI Enthusiast
-
-GitHub: https://github.com/samalasrikar
-
----
-
-## 📜 License
-
-This project is developed for educational and learning purposes.
+* Scikit-Learn Documentation
+* UCI Machine Learning Repository
+* Python Open Source Community
+* Faculty Mentors and Project Reviewers
